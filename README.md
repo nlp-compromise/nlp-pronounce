@@ -9,7 +9,7 @@ nlp.plugin(nlpPronounce);
 
 var t = nlp.text('phil collins');
 t.pronounce()
-// [ 'fil', 'kolins' ]
+// "fil kolins"
 ```
 
 it also takes advantage of the tokenization & cleverness of nlp_compromise.
