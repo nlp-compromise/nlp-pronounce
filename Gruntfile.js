@@ -12,14 +12,14 @@ module.exports = function(grunt) {
         exec: 'node ./src/index.js'
       },
       build: {
-        exec: 'browserify ./src/index.js --standalone nlpPronounce -o ./builds/nlp-pronounce.es5.js -t [ babelify --presets [ es2015 ] ]'
+        exec: 'browserify ./src/index.js --standalone nlpPronounce -o ./builds/nlp-pronounce.latest.js -t [ babelify --presets [ es2015 ] ]'
       }
     },
 
     filesize: {
       base: {
         files: [{
-          src: ['./builds/nlp-pronounce.es5.js']
+          src: ['./builds/nlp-pronounce.latest.js']
         }],
         options: {
           ouput: [{
