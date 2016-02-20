@@ -31,5 +31,5 @@ module.exports = nlpPronounce;
 
 // const nlp = require('nlp_compromise');
 // nlp.plugin(nlpPronounce);
-// let w = nlp.text('phil collins');
+// let w = nlp.text('tony danza');
 // console.log(w.pronounce());

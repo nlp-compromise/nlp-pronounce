@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 //individual manipulations of the text
 const transformations = {
@@ -50,7 +50,7 @@ const transformations = {
     return s.replace(/s(h|io|ia)/g, 'x$1');
   },
   changeT: (s) => {
-    s = s.replace(/t(ia|io)/g, 'x$1');
+    s = s.replace(/t(ia[^n]|io)/g, 'x$1');
     return s.replace(/th/, '0');
   },
   dropT: (s) => {
@@ -76,7 +76,7 @@ const transformations = {
     return s.replace(/z/, 's');
   },
   dropVowels: (s) => {
-    return s //.charAt(0) + s.substr(1, s.length).replace(/[aeiou]/g, '');
+    return s; //.charAt(0) + s.substr(1, s.length).replace(/[aeiou]/g, '');
   }
-}
-module.exports = transformations
+};
+module.exports = transformations;

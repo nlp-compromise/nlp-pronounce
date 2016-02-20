@@ -13,3 +13,5 @@ t.pronounce()
 ```
 
 it also takes advantage of the tokenization & cleverness of nlp_compromise.
+
+it's not been properly tested.
